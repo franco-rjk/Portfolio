@@ -1,0 +1,432 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-tag reveal-up">Disponible para trabajar</div>
+        <h1 class="hero-title reveal-up delay-1">
+            <span class="line">Franco</span>
+            <span class="line gradient-text">Rojkes</span>
+        </h1>
+        <p class="hero-sub reveal-up delay-2">
+            <span id="typed-text"></span><span class="cursor-blink">|</span>
+        </p>
+        <p class="hero-desc reveal-up delay-3">
+            Estudiante de sistemas apasionado por la <span class="accent">ciberseguridad</span>, 
+            el desarrollo de software y la resolución de problemas complejos.
+        </p>
+        <div class="hero-actions reveal-up delay-4">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost">Contactarme</a>
+        </div>
+        <div class="hero-badges reveal-up delay-5">
+            <span class="badge">🔐 Ciberseguridad</span>
+            <span class="badge">⚙️ .NET / C++</span>
+            <span class="badge">🌐 Desarrollo Web</span>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="hero-card glass">
+            <div class="hc-header">
+                <span class="hc-dot red"></span>
+                <span class="hc-dot yellow"></span>
+                <span class="hc-dot green"></span>
+                <span class="hc-title">security_scan.py</span>
+            </div>
+            <pre class="hc-code"><span class="kw">def</span> <span class="fn">analyze_threat</span>(target):
+    <span class="kw">if</span> anomaly_detected(target):
+        <span class="kw">return</span> mitigate(target)
+    <span class="cmt"># System secured ✓</span></pre>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="section">
+    <div class="section-inner">
+        <div class="section-label reveal-left">01 / Sobre mí</div>
+        <div class="about-grid">
+            <div class="about-text reveal-left delay-1">
+                <h2 class="section-title">Quién soy</h2>
+                <p>Tengo 20 años y soy un apasionado de la tecnología con foco en <strong>ciberseguridad y sistemas</strong>. Me formé como Técnico en Programación en la UTN y completé el curso <strong>CS50 de Harvard</strong>, donde profundicé en algoritmos, estructuras de datos y seguridad informática.</p>
+                <p>Me caracterizo por el aprendizaje autodidacta, pensamiento analítico y la capacidad de adaptarme rápidamente a nuevas tecnologías. Busco mi primera oportunidad formal en el área de <span class="accent">ciberseguridad</span>.</p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">Ubicación</span>
+                        <span class="info-val">Tigre, Buenos Aires</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-val">francorojkes&#64;gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Disponibilidad</span>
+                        <span class="info-val status-dot">Inmediata</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats reveal-right delay-2">
+                <div class="stat-card glass">
+                    <span class="stat-num">2+</span>
+                    <span class="stat-label">Años de formación técnica</span>
+                </div>
+                <div class="stat-card glass">
+                    <span class="stat-num">5+</span>
+                    <span class="stat-label">Lenguajes dominados</span>
+                </div>
+                <div class="stat-card glass">
+                    <span class="stat-num">CS50</span>
+                    <span class="stat-label">Harvard Certificate</span>
+                </div>
+                <div class="stat-card glass">
+                    <span class="stat-num">0→</span>
+                    <span class="stat-label">Buscando primer rol en CyberSec</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="section section-alt">
+    <div class="section-inner">
+        <div class="section-label reveal-up">02 / Habilidades</div>
+        <h2 class="section-title center reveal-up delay-1">Stack tecnológico</h2>
+        <div class="skills-grid">
+            <div class="skill-group glass reveal-up delay-1">
+                <div class="sg-icon">⚡</div>
+                <h3>Lenguajes</h3>
+                <div class="skill-tags">
+                    <span class="stag">C</span>
+                    <span class="stag">C++</span>
+                    <span class="stag">Java</span>
+                    <span class="stag">.NET / C#</span>
+                    <span class="stag">JavaScript</span>
+                    <span class="stag">Python</span>
+                </div>
+            </div>
+            <div class="skill-group glass reveal-up delay-2">
+                <div class="sg-icon">🗄️</div>
+                <h3>Bases de Datos</h3>
+                <div class="skill-tags">
+                    <span class="stag">SQL</span>
+                    <span class="stag">Diseño relacional</span>
+                    <span class="stag">Consultas complejas</span>
+                    <span class="stag">Normalización</span>
+                </div>
+            </div>
+            <div class="skill-group glass reveal-up delay-3">
+                <div class="sg-icon">🔐</div>
+                <h3>Ciberseguridad</h3>
+                <div class="skill-tags">
+                    <span class="stag hot">Detección de fraudes</span>
+                    <span class="stag hot">Menor privilegio</span>
+                    <span class="stag hot">Privacidad de datos</span>
+                    <span class="stag hot">Análisis de anomalías</span>
+                </div>
+            </div>
+            <div class="skill-group glass reveal-up delay-4">
+                <div class="sg-icon">🌐</div>
+                <h3>Web & Dev</h3>
+                <div class="skill-tags">
+                    <span class="stag">HTML / CSS</span>
+                    <span class="stag">JavaScript</span>
+                    <span class="stag">Razor Pages</span>
+                    <span class="stag">Git</span>
+                </div>
+            </div>
+            <div class="skill-group glass reveal-up delay-5">
+                <div class="sg-icon">🧩</div>
+                <h3>CS Fundamentals</h3>
+                <div class="skill-tags">
+                    <span class="stag">Algoritmos</span>
+                    <span class="stag">Estructuras de datos</span>
+                    <span class="stag">Big O</span>
+                    <span class="stag">Gestión de memoria</span>
+                    <span class="stag">Punteros</span>
+                </div>
+            </div>
+            <div class="skill-group glass reveal-up delay-6">
+                <div class="sg-icon">📊</div>
+                <h3>Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="stag">Pensamiento analítico</span>
+                    <span class="stag">Autodidacta</span>
+                    <span class="stag">Trabajo en equipo</span>
+                    <span class="stag">Resolución de problemas</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="proficiency-bars reveal-up delay-2">
+            <h3 class="bars-title">Nivel de dominio</h3>
+            <div class="bar-item">
+                <div class="bar-label"><span>C / C++</span><span class="bar-pct">85%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="85"></div></div>
+            </div>
+            <div class="bar-item">
+                <div class="bar-label"><span>Java / .NET</span><span class="bar-pct">80%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="80"></div></div>
+            </div>
+            <div class="bar-item">
+                <div class="bar-label"><span>SQL</span><span class="bar-pct">78%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="78"></div></div>
+            </div>
+            <div class="bar-item">
+                <div class="bar-label"><span>Web (HTML/CSS/JS)</span><span class="bar-pct">75%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="75"></div></div>
+            </div>
+            <div class="bar-item">
+                <div class="bar-label"><span>Ciberseguridad</span><span class="bar-pct">65%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="65" class="accent-bar"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="section">
+    <div class="section-inner">
+        <div class="section-label reveal-up">03 / Proyectos</div>
+        <h2 class="section-title center reveal-up delay-1">Trabajos destacados</h2>
+        <div class="filter-bar reveal-up delay-2">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="security">Seguridad</button>
+            <button class="filter-btn" data-filter="dev">Desarrollo</button>
+            <button class="filter-btn" data-filter="data">Datos</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+
+            <div class="project-card glass reveal-up delay-1" data-cat="security">
+                <div class="pc-top">
+                    <div class="pc-icon">🔍</div>
+                    <div class="pc-tags">
+                        <span class="ptag">Python</span><span class="ptag">Seguridad</span>
+                    </div>
+                </div>
+                <h3>Sistema de Detección de Anomalías</h3>
+                <p>Script de análisis de logs para detectar patrones inusuales en sistemas administrativos. Generación de reportes automáticos con alertas por umbral.</p>
+                <div class="pc-footer">
+                    <a href="#" class="btn-sm">Demo</a>
+                    <a href="#" class="btn-sm ghost">Código</a>
+                </div>
+            </div>
+
+            <div class="project-card glass reveal-up delay-2" data-cat="dev">
+                <div class="pc-top">
+                    <div class="pc-icon">🛒</div>
+                    <div class="pc-tags">
+                        <span class="ptag">.NET</span><span class="ptag">SQL</span><span class="ptag">CRM</span>
+                    </div>
+                </div>
+                <h3>Gestión de Compras Marketplace</h3>
+                <p>Sistema de análisis de transacciones bancarias integrado con CRM y plataformas propias para detección de fraudes y mejora de atención al cliente.</p>
+                <div class="pc-footer">
+                    <a href="#" class="btn-sm">Demo</a>
+                    <a href="#" class="btn-sm ghost">Código</a>
+                </div>
+            </div>
+
+            <div class="project-card glass reveal-up delay-3" data-cat="data">
+                <div class="pc-top">
+                    <div class="pc-icon">📊</div>
+                    <div class="pc-tags">
+                        <span class="ptag">SQL</span><span class="ptag">Excel</span>
+                    </div>
+                </div>
+                <h3>Dashboard de Reportes Operativos</h3>
+                <p>Generación de reportes por estación de GNC para detectar inconsistencias en cargas de productos y gestión de personal mediante análisis de integridad de datos.</p>
+                <div class="pc-footer">
+                    <a href="#" class="btn-sm">Demo</a>
+                    <a href="#" class="btn-sm ghost">Código</a>
+                </div>
+            </div>
+
+            <div class="project-card glass reveal-up delay-4" data-cat="security">
+                <div class="pc-top">
+                    <div class="pc-icon">🔒</div>
+                    <div class="pc-tags">
+                        <span class="ptag">Administración</span><span class="ptag">Permisos</span>
+                    </div>
+                </div>
+                <h3>Gestión de Accesos y Privilegios</h3>
+                <p>Implementación del principio de menor privilegio en sistemas administrativos. Auditoría de perfiles de usuario y cumplimiento de políticas de privacidad.</p>
+                <div class="pc-footer">
+                    <a href="#" class="btn-sm">Demo</a>
+                    <a href="#" class="btn-sm ghost">Código</a>
+                </div>
+            </div>
+
+            <div class="project-card glass reveal-up delay-5" data-cat="dev">
+                <div class="pc-top">
+                    <div class="pc-icon">🧮</div>
+                    <div class="pc-tags">
+                        <span class="ptag">C</span><span class="ptag">Algoritmos</span>
+                    </div>
+                </div>
+                <h3>Estructuras de Datos en C</h3>
+                <p>Implementación de listas enlazadas, árboles binarios, tablas hash y grafos con gestión manual de memoria. Proyecto final de CS50 Harvard.</p>
+                <div class="pc-footer">
+                    <a href="#" class="btn-sm">Demo</a>
+                    <a href="#" class="btn-sm ghost">Código</a>
+                </div>
+            </div>
+
+            <div class="project-card glass reveal-up delay-6" data-cat="dev">
+                <div class="pc-top">
+                    <div class="pc-icon">🌐</div>
+                    <div class="pc-tags">
+                        <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span>
+                    </div>
+                </div>
+                <h3>Este Portfolio</h3>
+                <p>Diseño y desarrollo completo de este portfolio con .NET Core, Razor Pages, CSS animations y partículas en canvas. Responsive y con efectos avanzados.</p>
+                <div class="pc-footer">
+                    <a href="#" class="btn-sm">Demo</a>
+                    <a href="#" class="btn-sm ghost">Código</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCIA / FORMACIÓN -->
+<section id="experiencia" class="section section-alt">
+    <div class="section-inner">
+        <div class="section-label reveal-up">04 / Trayectoria</div>
+        <h2 class="section-title center reveal-up delay-1">Experiencia & Formación</h2>
+        <div class="timeline">
+
+            <div class="tl-item reveal-left delay-1">
+                <div class="tl-dot"></div>
+                <div class="tl-card glass">
+                    <span class="tl-date">Jun 2024 – Dic 2024</span>
+                    <div class="tl-type work">Laboral</div>
+                    <h3>Analista de Marketplace</h3>
+                    <h4>Sodimac</h4>
+                    <ul>
+                        <li>Detección de fraudes en compras bancarias</li>
+                        <li>Gestión de procesos entre plataformas bancarias, CRM y Excel</li>
+                        <li>Identificación de oportunidades de mejora en atención al cliente</li>
+                    </ul>
+                    <div class="tl-skills">
+                        <span>Excel</span><span>CRM</span><span>Análisis de fraude</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item right reveal-right delay-2">
+                <div class="tl-dot"></div>
+                <div class="tl-card glass">
+                    <span class="tl-date">Abr 2024 – Dic 2024</span>
+                    <div class="tl-type work">Laboral</div>
+                    <h3>Administración de Sistemas</h3>
+                    <h4>Argas S.A.</h4>
+                    <ul>
+                        <li>Gestión de permisos bajo principio de menor privilegio</li>
+                        <li>Cumplimiento de políticas de privacidad y protección de datos</li>
+                        <li>Análisis de integridad y detección de anomalías operativas</li>
+                    </ul>
+                    <div class="tl-skills">
+                        <span>Seguridad</span><span>Privacidad</span><span>SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal-left delay-3">
+                <div class="tl-dot edu"></div>
+                <div class="tl-card glass">
+                    <span class="tl-date">Jun 2024 – Ago 2024</span>
+                    <div class="tl-type edu">Formación</div>
+                    <h3>CS50 — Ciencias de la Computación</h3>
+                    <h4>Harvard University</h4>
+                    <ul>
+                        <li>Algoritmos, Big O, estructuras de datos avanzadas</li>
+                        <li>Gestión de memoria en C con punteros</li>
+                        <li>Bases de datos, seguridad informática y desarrollo web</li>
+                    </ul>
+                    <div class="tl-skills">
+                        <span>C</span><span>Python</span><span>SQL</span><span>HTML/CSS/JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item right reveal-right delay-4">
+                <div class="tl-dot edu"></div>
+                <div class="tl-card glass">
+                    <span class="tl-date">Mar 2022 – Nov 2023</span>
+                    <div class="tl-type edu">Formación</div>
+                    <h3>Técnico en Programación</h3>
+                    <h4>UTN — Pacheco</h4>
+                    <ul>
+                        <li>Lógica de programación, estructuras de datos y algoritmos</li>
+                        <li>C, C++, Java y .NET</li>
+                        <li>Diseño de bases de datos relacionales (SQL)</li>
+                    </ul>
+                    <div class="tl-skills">
+                        <span>C++</span><span>Java</span><span>.NET</span><span>SQL</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+    <div class="section-inner">
+        <div class="section-label reveal-up">05 / Contacto</div>
+        <h2 class="section-title center reveal-up delay-1">Hablemos</h2>
+        <p class="section-sub center reveal-up delay-2">¿Tenés una oportunidad en ciberseguridad o desarrollo? Me encantaría escucharte.</p>
+        <div class="contact-wrap reveal-up delay-3">
+            <div class="contact-info">
+                <div class="ci-item glass">
+                    <span class="ci-icon">📧</span>
+                    <div>
+                        <span class="ci-label">Email</span>
+                        <a href="mailto:francorojkes@gmail.com" class="ci-val">francorojkes&#64;gmail.com</a>
+                    </div>
+                </div>
+                <div class="ci-item glass">
+                    <span class="ci-icon">📱</span>
+                    <div>
+                        <span class="ci-label">Teléfono</span>
+                        <a href="tel:+5491151036581" class="ci-val">+54 911 5103-6581</a>
+                    </div>
+                </div>
+                <div class="ci-item glass">
+                    <span class="ci-icon">📍</span>
+                    <div>
+                        <span class="ci-label">Ubicación</span>
+                        <span class="ci-val">Tigre, Buenos Aires, Argentina</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form glass" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame sobre la oportunidad..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full">Enviar mensaje</button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </div>
+</section>

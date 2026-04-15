@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] — Franco Rojkes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">Franco Rojkes<span class="accent">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Skills</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-logo">Franco Rojkes<span class="accent">.</span></span>
+            <p>© 2025 Franco Rojkes. Diseñado con <span class="accent">C#</span>.</p>
+            <div class="footer-links">
+                <a href="mailto:francorojkes@gmail.com">Email</a>
+                <a href="tel:+5491151036581">Teléfono</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
