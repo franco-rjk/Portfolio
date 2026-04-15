@@ -1,0 +1,10 @@
+bin/
+obj/
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.vs/
+publish/
+*.dll
+*.exe
