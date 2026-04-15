@@ -1,9 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
-COPY . .
-WORKDIR /app/Portfolio
-RUN dotnet restore
-RUN dotnet publish -c Release -o /app/publish
+COPY Portfolio/Portfolio.csproj ./Portfolio/
+COPY Portfolio/ ./Portfolio/
+RUN cd Portfolio && dotnet restore && dotnet publish -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
