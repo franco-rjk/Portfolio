@@ -1,7 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-WORKDIR /app
-COPY Portfolio/Portfolio.csproj ./Portfolio/
-COPY Portfolio/ ./Portfolio/
+WORKDIR /src
+COPY . .
 RUN cd Portfolio && dotnet restore && dotnet publish -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
