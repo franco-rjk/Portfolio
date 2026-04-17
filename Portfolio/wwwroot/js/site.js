@@ -120,11 +120,11 @@ navLinks?.querySelectorAll('a').forEach(a => {
 // TYPED TEXT EFFECT
 // ===========================
 const lines = [
-  'Estudiante de Sistemas',
-  'Apasionado por Ciberseguridad',
+  'Técnico en Programación',
+  'Apasionado por la Robótica',
   'Desarrollador de Software',
-  'CS50 Harvard Graduate',
-  'Futuro Analista de Seguridad'
+  'CS50 Harvard Graduated',
+  'Automatizador de Procesos'
 ];
 const typedEl = document.getElementById('typed-text');
 let lineIdx = 0, charIdx = 0, deleting = false;
